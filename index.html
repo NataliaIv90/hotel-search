@@ -14,161 +14,180 @@
   <header>
     <div class="header">
       <div class="header__links">
-        <div>
-          <img src="./img/header/plane.svg" alt="">
-          <div>Find Flight</div>
+        <div class="header__linksItem">
+          <a href="#" class="header__link">
+            <img src="./img/header/plane.svg" alt="">
+            <div>Find Flight</div>
+          </a>
         </div>
-        <div>
-          <img src="./img/header/hotel.svg" alt="">
-          <div>Find Stays</div>
+        <div class="header__linksItem">
+          <a href="#" class="header__link">
+            <img src="./img/header/hotel.svg" alt="">
+            <div>Find Stays</div>
+          </a>
         </div>
       </div>
       <div class="header__logo"><img src="./img/header/icon.png" alt=""></div>
       <div class="header__loginBtns">
-        <div><button>Login</button></div>
-        <div><button>Sign up</button></div>
+        <div><button class="header__loginBtn">Login</button></div>
+        <div><button class="header__loginBtn header__loginBtn--styled">Sign up</button></div>
       </div>
     </div>
   </header>
   <main>
-    <div class="hero">
-      <p>Helping Others</p>
-      <h1>Live & Travel</h1>
-      <p>Special offers to suit your plan</p>
-    </div>
-    <div class="search">
-      <div>
-        <div>
-          <img src="./img/header/plane.svg" alt="">
-          <div>Flights</div>
-        </div>
-        <div>
-          <img src="./img/header/hotel.svg" alt="">
-          <div>Stays</div>
+    <div class="main">
+      <div class="hero">
+        <div class="hero__content">
+          <p class="hero__subTitle">Helping Others</p>
+          <h1 class="hero__title">Live & Travel</h1>
+          <p class="hero__text">Special offers to suit your plan</p>
         </div>
       </div>
-      <div>
-        <fieldset>
-          <legend>From - To</legend>
+      <div class="search">
+        <div class="search__formWrapper">
+          <form id="search__form" class="search__form">
+            <div class="search__togleBtns">
+              <a href="#" class="search__toggleBtn search__toggleBtn--borderRight">
+                <img src="./img/main/search/plane.svg" alt="">
+                <div>Flights</div>
+              </a>
+              <a href="#" class="search__toggleBtn">
+                <img src="./img/main/search/hotel.svg" alt="">
+                <div>Stays</div>
+              </a>
+            </div>
+            <div class="search__inpWrapper">
+              <fieldset class="search__fieldset">
+                <legend> From - To </legend>
+                <div class="search__fieldsetContent">
+                  <div>
+                    <input class="search__inp" type="text" name="" id="" placeholder="Lahore - Karachi" disabled>
+                  </div>
+                  <div><img src="./img/main/swap.svg" alt=""></div>
+                </div>
+                <div class="hidden"></div>
+
+              </fieldset>
+              <fieldset class="search__fieldset">
+                <legend> Trip </legend>
+                <div class="search__fieldsetContent">
+                  <div><input class="search__inp" type="text" name="" id="" placeholder="return" disabled></div>
+                  <div><img src="./img/main/arrow-down.svg" alt=""></div>
+                </div>
+              </fieldset>
+              <fieldset class="search__fieldset">
+                <legend> Depart- Return </legend>
+                <input class="search__inp" type="text" name="" id="" placeholder="07 Nov 22 - 13 Nov 22" disabled>
+              </fieldset>
+              <fieldset class="search__fieldset">
+                <legend> Passenger - Class </legend>
+                <input class="search__inp" type="text" name="" id="" placeholder="1 Passenger, Economy" disabled>
+              </fieldset>
+            </div>
+            <div class="search__footerBtns">
+              <div>
+                <input class="search__footerBtn search__footerBtnInp" placeholder="+ Add Promo Code">
+              </div>
+              <div>
+                <button class="search__footerBtn search__footerBtn--green"><img src="./img/main/plane.svg" alt="">
+                  <div>Show
+                    Filghts</div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="destinations">
+        <div class="destinations__header">
           <div>
-            <div>
-              <input type="text" name="" id="" placeholder="Lahore - Karachi" disabled>
-            </div>
-            <div><img src="./img/main/swap.svg" alt=""></div>
+            <h2>Plan your perfect trip</h2>
+            <p>Search Flights & Places Hire to our most popular destinations</p>
           </div>
-          <div class="hidden"></div>
+          <div><button>See more places</button></div>
+        </div>
+        <div class="destination__cards">
+          <div class="destination__card">
+            <div class="destination__cardImgContainer"></div>
+            <div class="destination__cardContent">
+              <div class="destination__cardTitle">
+                <h4>Istanbul, Turkey</h4>
+              </div>
+              <div class="destination__cardSubtitle">
+                <a href="">Flights </a> • <a href="">Hotels</a> • <a href="">Resorts</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        </fieldset>
-        <fieldset>
-          <legend>Trip</legend>
+      </div>
+      <div class="pagesLinks">
+        <div>
           <div>
-            <div><input type="text" name="" id="" placeholder="return" disabled></div>
-            <div><img src="./img/main/arrow-down.svg" alt=""></div>
+            <h3>Flights</h3>
+            <p>
+              Search Flights & Places Hire to our most popular destinations
+            </p>
+            <a href="#"><img src="./img/main/plane.svg" alt=""> Show Filghts</a>
           </div>
-        </fieldset>
-        <fieldset>
-          <legend>Depart- Return</legend>
-          <input type="text" name="" id="" placeholder="07 Nov 22 - 13 Nov 22" disabled>
-        </fieldset>
-        <fieldset>
-          <legend>Passenger - Class</legend>
-          <input type="text" name="" id="" placeholder="1 Passenger, Economy" disabled>
-        </fieldset>
-      </div>
-      <div>
-        <div><button><img src="./img/main/plus.svg" alt=""> Add Promo Code</button></div>
-        <div><button><img src="./img/main/plane.svg" alt="">Show Filghts</button></div>
-      </div>
-    </div>
-    <div class="destinations">
-      <div class="destinations__header">
-        <div>
-          <h2>Plan your perfect trip</h2>
-          <p>Search Flights & Places Hire to our most popular destinations</p>
         </div>
-        <div><button>See more places</button></div>
+        <div>
+          <div>
+            <h3>Hotels</h3>
+            <p>
+              Search hotels & Places Hire to our most popular destinations
+            </p>
+            <a href="#"><img src="./img/main/plane.svg" alt=""> Show Hotels</a>
+          </div>
+        </div>
       </div>
-      <div class="destination__cards">
-        <div class="destination__card">
-          <div class="destination__cardImgContainer"></div>
-          <div class="destination__cardContent">
-            <div class="destination__cardTitle">
-              <h4>Istanbul, Turkey</h4>
+      <div class="reviews">
+        <div class="rewiews__header">
+          <div>
+            <h2>Reviews</h2>
+            <p>What people says about Golobe facilities</p>
+          </div>
+          <div><button>See all</button></div>
+        </div>
+        <div class="rewiews__cards">
+          <div class="rewiews__card">
+            <div class="rewiews__cardTitle"></div>
+            <div class="rewiews__cardSubtitle">
+              <div class="rewiews__cardSubtitleText"></div>
+              <div class="rewiews__cardSubtitleBtn"></div>
             </div>
-            <div class="destination__cardSubtitle">
-              <a href="">Flights </a> • <a href="">Hotels</a> • <a href="">Resorts</a>
+            <div class="rewiews__cardRate"></div>
+            <div class="rewiews__cardClientName"></div>
+            <div class="rewiews__cardDestination"></div>
+            <div class="rewiews__cardReviewSource"></div>
+            <div class="rewiews__cardImgContainer"></div>
+          </div>
+
+          <div class="rewiews__card">
+            <div class="rewiews__cardTitle"></div>
+            <div class="rewiews__cardSubtitle">
+              <div class="rewiews__cardSubtitleText"></div>
+              <div class="rewiews__cardSubtitleBtn"></div>
             </div>
+            <div class="rewiews__cardRate"></div>
+            <div class="rewiews__cardClientName"></div>
+            <div class="rewiews__cardDestination"></div>
+            <div class="rewiews__cardReviewSource"></div>
+            <div class="rewiews__cardImgContainer"></div>
           </div>
-        </div>
-      </div>
 
-    </div>
-    <div class="pagesLinks">
-      <div>
-        <div>
-          <h3>Flights</h3>
-          <p>
-            Search Flights & Places Hire to our most popular destinations
-          </p>
-          <a href="#"><img src="./img/main/plane.svg" alt=""> Show Filghts</a>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>Hotels</h3>
-          <p>
-            Search hotels & Places Hire to our most popular destinations
-          </p>
-          <a href="#"><img src="./img/main/plane.svg" alt=""> Show Hotels</a>
-        </div>
-      </div>
-    </div>
-    <div class="reviews">
-      <div class="rewiews__header">
-        <div>
-          <h2>Reviews</h2>
-          <p>What people says about Golobe facilities</p>
-        </div>
-        <div><button>See all</button></div>
-      </div>
-      <div class="rewiews__cards">
-        <div class="rewiews__card">
-          <div class="rewiews__cardTitle"></div>
-          <div class="rewiews__cardSubtitle">
-            <div class="rewiews__cardSubtitleText"></div>
-            <div class="rewiews__cardSubtitleBtn"></div>
+          <div class="rewiews__card">
+            <div class="rewiews__cardTitle"></div>
+            <div class="rewiews__cardSubtitle">
+              <div class="rewiews__cardSubtitleText"></div>
+              <div class="rewiews__cardSubtitleBtn"></div>
+            </div>
+            <div class="rewiews__cardRate"></div>
+            <div class="rewiews__cardClientName"></div>
+            <div class="rewiews__cardDestination"></div>
+            <div class="rewiews__cardReviewSource"></div>
+            <div class="rewiews__cardImgContainer"></div>
           </div>
-          <div class="rewiews__cardRate"></div>
-          <div class="rewiews__cardClientName"></div>
-          <div class="rewiews__cardDestination"></div>
-          <div class="rewiews__cardReviewSource"></div>
-          <div class="rewiews__cardImgContainer"></div>
-        </div>
-
-        <div class="rewiews__card">
-          <div class="rewiews__cardTitle"></div>
-          <div class="rewiews__cardSubtitle">
-            <div class="rewiews__cardSubtitleText"></div>
-            <div class="rewiews__cardSubtitleBtn"></div>
-          </div>
-          <div class="rewiews__cardRate"></div>
-          <div class="rewiews__cardClientName"></div>
-          <div class="rewiews__cardDestination"></div>
-          <div class="rewiews__cardReviewSource"></div>
-          <div class="rewiews__cardImgContainer"></div>
-        </div>
-
-        <div class="rewiews__card">
-          <div class="rewiews__cardTitle"></div>
-          <div class="rewiews__cardSubtitle">
-            <div class="rewiews__cardSubtitleText"></div>
-            <div class="rewiews__cardSubtitleBtn"></div>
-          </div>
-          <div class="rewiews__cardRate"></div>
-          <div class="rewiews__cardClientName"></div>
-          <div class="rewiews__cardDestination"></div>
-          <div class="rewiews__cardReviewSource"></div>
-          <div class="rewiews__cardImgContainer"></div>
         </div>
       </div>
     </div>
