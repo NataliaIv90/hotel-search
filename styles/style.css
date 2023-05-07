@@ -46,6 +46,12 @@ body {
   background-color: var(--light-bg-color);
 }
 
+.width-90 {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
 .header {
   position: absolute;
   top: 0px;
@@ -223,4 +229,87 @@ body {
   padding: var(--size-16rem);
   display: flex;
   gap: 4px;
+}
+
+.destinations__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--size-32rem);
+}
+
+.destination__title {
+  font-family: var(--main-font-semibold);
+  font-size: 32rem;
+  margin-bottom: var(--size-16rem);
+}
+
+.destination__subtitle {
+  font-family: var(--main-font-regular);
+  font-size: 16rem;
+}
+
+.destination__titleBtn {
+  border: 1px solid var(--brand-color-dark);
+  padding: 12rem 16rem;
+  border-radius: 4px;
+  font-family: var(--main-font-medium);
+  transition: all 0.2s;
+}
+
+.destination__titleBtn:hover {
+  background-color: var(--brand-color-dark);
+  color: white;
+}
+
+.destination__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--size-32rem);
+}
+
+.destination__card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--size-16rem);
+  padding: var(--size-16rem);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 16px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.destination__card:hover {
+  border: 1px solid var(--brand-color-dark);
+  cursor: pointer;
+}
+
+.destination__cardImg {
+  width: 100%;
+  height: auto;
+}
+
+.destination__cardTitle {
+  font-family: var(--main-font-semibold);
+  color: var(--dark-font-color-secondary);
+  opacity: 0.7;
+  font-size: 16rem;
+  margin-bottom: 8rem;
+}
+
+.destination__cardSubtitle {
+  font-family: var(--main-font-medium);
+  font-size: 14rem;
+}
+
+.destination__cardLink {
+  transition: all 0.2s;
+}
+
+.destination__cardLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--brand-color-dark);
 }
