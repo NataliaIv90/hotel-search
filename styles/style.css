@@ -514,3 +514,129 @@ body {
 .reviews__starDark {
   filter: grayscale();
 }
+
+.footer {
+  background-color: var(--brand-color-dark);
+  width: 100%;
+  position: relative;
+  padding: 230px 5% 64px;
+  margin-top: 200px;
+}
+
+.footer_subscribe {
+  position: absolute;
+  top: -140px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  /* height: 300px; */
+  z-index: 5;
+  background-color: var(--border-color-light);
+  color: var(--dark-font-color-secondary);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+
+}
+
+.footer_subscribeImgContainer {
+  height: 320px;
+  width: 45%;
+  background-image: url("../img/footer/mailbox.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.footer_subscribeContent {
+  padding: 24rem;
+  color: var(--dark-font-color-secondary);
+}
+
+.footer_subscribeTitle {
+  font-family: var(--brand-font-bold);
+  font-size: 44rem;
+  margin-bottom: 24rem;
+}
+
+.footer_subscribeSubtitle {
+  font-family: var(--brand-font-bold);
+
+  font-size: 20px;
+}
+
+.footer_subscribeText {
+  font-family: var(--main-font-medium);
+  font-size: 16rem;
+  opacity: 0.5;
+}
+
+.footer__subscribeForm {
+  display: flex;
+  justify-content: stretch;
+  gap: 16rem;
+  margin-top: 16rem;
+}
+
+.footer_subscribeInpContainer {
+  width: 70%;
+}
+
+.footer_subscribeInp {
+  width: 100%;
+  padding: 7px;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.footer_subscribeBtn {
+  border: 1px solid var(--brand-color-dark);
+  padding: 12rem 16rem;
+  border-radius: 4px;
+  font-family: var(--main-font-medium);
+  transition: all 0.2s;
+  background-color: var(--dark-font-color-main);
+  color: var(--light-font-color);
+}
+
+.footer_subscribeBtn:hover {
+  color: var(--dark-font-color-main);
+  background-color: var(--brand-color-dark);
+}
+
+.footer_logoWrapper {
+  width: 120px;
+  height: auto;
+}
+
+.footer_iconsWrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 13px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.footer_listsContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.footer__title {
+  font-family: var(--brand-font-bold);
+  font-size: 16rem;
+  margin-bottom: 16rem;
+}
+
+.footer__list {
+  font-family: var(--main-font-medium);
+  font-size: 14rem;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 12px;
+}

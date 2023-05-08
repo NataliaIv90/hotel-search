@@ -90,8 +90,7 @@
               </div>
               <div>
                 <button class="search__footerBtn search__footerBtn--green"><img src="./img/main/plane.svg" alt="">
-                  <div>Show
-                    Filghts</div>
+                  <span>Show Filghts</span>
                 </button>
               </div>
             </div>
@@ -120,7 +119,7 @@
         <p class="pagesLinks__subtitle">
           Search Flights & Places Hire to our most popular destinations
         </p>
-        <button href="#" class="pagesLinks__btn"><img src="./img/main/plane.svg" alt=""> Show Filghts</button>
+        <button class="pagesLinks__btn"><img src="./img/main/plane.svg" alt=""> Show Filghts</button>
       </div>
 
       <div class="pagesLinks__card pagesLinks__hotels">
@@ -129,7 +128,7 @@
         <p class="pagesLinks__subtitle">
           Search hotels & Places Hire to our most popular destinations
         </p>
-        <button href="#" class="pagesLinks__btn"><img src="./img/main/plane.svg" alt=""> Show Hotels</button>
+        <button class="pagesLinks__btn"><img src="./img/main/plane.svg" alt=""> Show Hotels</button>
 
       </div>
     </div>
@@ -145,34 +144,36 @@
 
       </div>
     </div>
-    </div>
+
   </main>
   <footer>
     <div class="footer">
       <div class="footer_subscribe">
         <div class="footer_subscribeContent">
-          <div class="footer_subscribeTitle">Subscribe Newsletter</div>
-          <div class="footer_subscribe">The Travel</div>
-          <div class="footer_subscribe">Get inspired! Receive travel discounts, tips and behind the scenes stories.
-          </div>
-          <div class="footer_subscribe">
-            <form id="footer__subscribeForm">
-              <div class="footer_subscribeInpContainer">
-                <input type="text" class="footer_subscribeInp" id="footer_subscribeInp"
-                  placeholder="Your email address">
-              </div>
-              <div class="footer_subscribeBtnContainer">
-                <button type="submit" class="footer_subscribeBtn" id="footer_subscribeBtn">Subscribe</button>
-              </div>
-            </form>
-          </div>
+          <h3 class="footer_subscribeTitle">Subscribe<br>Newsletter</h3>
+          <p class="footer_subscribeSubtitle">The Travel</p>
+          <p class="footer_subscribeText">Get inspired! Receive travel discounts, tips and behind the scenes stories.
+          </p>
+
+
+          <form id="footer__subscribeForm" class="footer__subscribeForm">
+            <div class="footer_subscribeInpContainer">
+              <input type="text" class="footer_subscribeInp" id="footer_subscribeInp" placeholder="Your email address">
+            </div>
+            <div class="footer_subscribeBtnContainer">
+              <button type="submit" class="footer_subscribeBtn" id="footer_subscribeBtn">Subscribe</button>
+            </div>
+          </form>
+
         </div>
+
         <div class="footer_subscribeImgContainer"></div>
+
       </div>
-      <div class="footer_container">
+      <div class="footer_listsContainer">
         <div class="footer_leftSection">
           <div class="footer_logoWrapper">
-            <a href="#"><img src="./img/footer/icon.png" alt=""></a>
+            <a href="#"><img src="./img/footer/logo.png" alt=""></a>
           </div>
           <div class="footer_iconsWrapper">
             <div><a href="#" target="_blank"><img src="./img/footer/facebook.svg" alt=""></a></div>
@@ -181,8 +182,52 @@
             <div><a href="#" target="_blank"><img src="./img/footer/instagram.svg" alt=""></a></div>
           </div>
         </div>
-        <div class="footer_rightSection"></div>
+
+        <div>
+          <h4 class="footer__title">Our Destinations</h4>
+          <ul class="footer__list">
+            <li>Canada</li>
+            <li>Alaksa</li>
+            <li>France</li>
+            <li>Iceland</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Our Activities</h4>
+          <ul class="footer__list">
+            <li>Northern Lights</li>
+            <li>Cruising & sailing</li>
+            <li> Multi-activities</li>
+            <li> Kayaing</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Travel Blogs</h4>
+          <ul class="footer__list">
+            <li>Bali Travel Guide</li>
+            <li>Sri Lanks Travel Guide</li>
+            <li>Peru Travel Guide</li>
+            <li>Bali Travel Guide</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">About Us</h4>
+          <ul class="footer__list">
+            <li>Our Story</li>
+            <li> Work with us</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Contact Us</h4>
+          <ul class="footer__list">
+            <li> Our Story</li>
+            <li> Work with us</li>
+          </ul>
+        </div>
       </div>
+
+    </div>
+
   </footer>
 
   <script src="./script/script.js"></script>
