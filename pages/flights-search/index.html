@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/flight-search.css">
+  <title>✈ Flight Search</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <div class="header__links">
+        <div class="header__linksItem">
+          <a href="#" class="header__link">
+            <img src="../../img/flight-search/header/plane.svg" alt="">
+            <div>Find Flight</div>
+          </a>
+        </div>
+        <div class="header__linksItem">
+          <a href="#" class="header__link">
+            <img src="../../img/flight-search/header/bed.svg" alt="">
+            <div>Find Stays</div>
+          </a>
+        </div>
+      </div>
+      <div class="header__logo"><img src="../../img/flight-search/header/logo.png" alt=""></div>
+      <div class="header__loginBtns">
+        <div><button class="header__loginBtn">Login</button></div>
+        <div><button class="header__loginBtn header__loginBtn--styled">Sign up</button></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main">
+      <div class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Make your travel whishlist, we’ll do the rest</h1>
+          <p class="hero__text">Special offers to suit your plan</p>
+        </div>
+      </div>
+      <div class="search">
+        <div class="search__formWrapper">
+          <form id="search__form" class="search__form">
+            <h2 class="search__formTitle">Where are you flying?</h2>
+            <div class="search__inpWrapper">
+              <fieldset class="search__fieldset">
+                <legend> From - To </legend>
+                <div class="search__fieldsetContent">
+                  <div>
+                    <input class="search__inp" type="text" name="" id="" placeholder="Lahore - Karachi" disabled>
+                  </div>
+                  <div><img src="./img/main/swap.svg" alt=""></div>
+                </div>
+                <div class="hidden"></div>
+
+              </fieldset>
+              <fieldset class="search__fieldset">
+                <legend> Trip </legend>
+                <div class="search__fieldsetContent">
+                  <div><input class="search__inp" type="text" name="" id="" placeholder="return" disabled></div>
+                  <div><img src="./img/main/arrow-down.svg" alt=""></div>
+                </div>
+              </fieldset>
+              <fieldset class="search__fieldset">
+                <legend> Depart- Return </legend>
+                <input class="search__inp" type="text" name="" id="" placeholder="07 Nov 22 - 13 Nov 22" disabled>
+              </fieldset>
+              <fieldset class="search__fieldset">
+                <legend> Passenger - Class </legend>
+                <input class="search__inp" type="text" name="" id="" placeholder="1 Passenger, Economy" disabled>
+              </fieldset>
+            </div>
+            <div class="search__footerBtns">
+              <div>
+                <input class="search__footerBtn search__footerBtnInp" placeholder="+ Add Promo Code">
+              </div>
+              <div>
+                <button class="search__footerBtn search__footerBtn--green"><img
+                    src="../../img/flight-search/main/hero/plane.svg" alt="">
+                  <span>Show Filghts</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../script/flight-search.js"></script>
+</body>
+
+</html>
