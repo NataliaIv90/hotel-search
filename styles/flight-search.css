@@ -85,3 +85,68 @@
 /* .destinations__btnWrapper {
   width: 10%;
 } */
+
+.places__map {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80rem;
+}
+
+.places__img {
+  width: 100%;
+  height: auto;
+}
+
+.hotTour__header {
+  margin-bottom: 40rem;
+}
+
+.hotTour__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16rem;
+  flex-wrap: wrap;
+}
+
+.hotTour__card {
+  width: 24%;
+  height: 55vh;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16rem;
+  padding: 24rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  color: var(--light-font-color);
+  border-radius: 12px;
+  font-family: var(--main-font-semibold);
+  font-size: 24rem;
+}
+
+.hotTour__cardSubtitle {
+  font-family: var(--main-font-regular);
+  font-size: 14rem;
+}
+
+.hotTour__cardContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 16rem;
+  align-items: flex-end;
+}
+
+.hotTour__cardTitleContainer {
+  width: 70%;
+}
+
+.hotTour__cardBtn {
+  font-family: var(--main-font-medium);
+  font-size: 14rem;
+  color: #112211;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #8DD3BB;
+  padding: 15rem 0;
+  border-radius: 4px;
+}

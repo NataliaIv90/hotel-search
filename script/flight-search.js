@@ -60,5 +60,28 @@ function displayCards() {
     {
       "name": "Seoul", "tour_name": "Korean Delights and K-Pop", "price": 1000, "img": "Seoul"
     }
-  ]
+  ],
+    cardsDiv = document.querySelector(".hotTour__cards");
+
+  for (let i = 0; i < 20; i++) {
+    insertCard(i);
+  }
+
+
+  function insertCard(num) {
+    let card = `
+   <div class="hotTour__card" style="background-image:url('../../img/flight-search/main/destinations/${tours[num].img}.jpg')">
+    <div class="hotTour__cardContent">
+      <div class="hotTour__cardTitleContainer">
+        <h4 class="hotTour__cardTitle">${tours[num].name}</h4>
+        <p class="hotTour__cardSubtitle">${tours[num].tour_name}</p>
+      </div>
+      <div>$<span class="hotTour__cardPrice">${tours[num].price}</span></div>
+    </div>
+    <div class="hotTour__cardBtnContainer"><button class="hotTour__cardBtn">Book flight</button></div>
+  </div>`
+    cardsDiv.insertAdjacentHTML("beforeend", card);
+  }
 }
+
+displayCards();
