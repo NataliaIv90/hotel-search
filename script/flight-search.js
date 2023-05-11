@@ -63,7 +63,7 @@ function displayCards() {
   ],
     cardsDiv = document.querySelector(".hotTour__cards");
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 4; i++) {
     insertCard(i);
   }
 
