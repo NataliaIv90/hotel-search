@@ -6,13 +6,139 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles/flight-listing.css">
-  <title>Flight listing</title>
+  <title>✈📃 Flight listing</title>
 </head>
 
 <body>
   <header></header>
   <main>
-    <div class="filter"></div>
+    <div class="search">
+      <div class="search__formWrapper">
+        <form id="search__form" class="search__form">
+          <h2 class="search__formTitle">Where are you flying?</h2>
+          <div class="search__inpWrapper">
+            <fieldset class="search__fieldset">
+              <legend> From - To </legend>
+              <div class="search__fieldsetContent">
+                <div>
+                  <input class="search__inp" type="text" name="" id="" placeholder="Lahore - Karachi" disabled>
+                </div>
+                <div><img src="./img/main/swap.svg" alt=""></div>
+              </div>
+              <div class="hidden"></div>
+
+            </fieldset>
+            <fieldset class="search__fieldset">
+              <legend> Trip </legend>
+              <div class="search__fieldsetContent">
+                <div><input class="search__inp" type="text" name="" id="" placeholder="return" disabled></div>
+                <div><img src="./img/main/arrow-down.svg" alt=""></div>
+              </div>
+            </fieldset>
+            <fieldset class="search__fieldset">
+              <legend> Depart- Return </legend>
+              <input class="search__inp" type="text" name="" id="" placeholder="07 Nov 22 - 13 Nov 22" disabled>
+            </fieldset>
+            <fieldset class="search__fieldset">
+              <legend> Passenger - Class </legend>
+              <input class="search__inp" type="text" name="" id="" placeholder="1 Passenger, Economy" disabled>
+            </fieldset>
+            <button class="search__footerBtn search__footerBtn--green">🔍
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="filter">
+      <h2>Filters</h2>
+      <form>
+        <div class="filter__price">
+          <div>
+            <div>
+              <h3 class="filter__priceTitle">Price</h3>
+            </div>
+            <div class="filter__imgContainer"></div>
+          </div>
+          <div class="filter__priceInpContainer">
+            <input type="range" name="" id="" min="0" max="1200">
+          </div>
+        </div>
+        <div class="filter__departure">
+          <div>
+            <div>
+              <h3 class="filter__departureTitle">Departure Time</h3>
+            </div>
+            <div class="filter__imgContainer"></div>
+          </div>
+          <div class="filter__departureInpContainer">
+            <input type="range" name="" id="" min="00.00" max="23.59">
+          </div>
+        </div>
+        <div class="filter__rating">
+          <div>
+            <h3 class="filter__ratingTitle">Rating</h3>
+            <div class="filter__imgContainer"></div>
+          </div>
+
+          <div class="filter__ratingBtnsContainer">
+            <button type="button">0+</button>
+            <button type="button">1+</button>
+            <button type="button">2+</button>
+            <button type="button">3+</button>
+            <button type="button">4+</button>
+          </div>
+        </div>
+        <div class="filter__airlines">
+          <div>
+            <h3>Airlines</h3>
+            <div class="filter__imgContainer"></div>
+          </div>
+          <div>
+            <div>
+              <label for="">Emirates</label>
+              <input type="checkbox" name="" id="">
+            </div>
+            <div>
+              <label for="">Fly Dubai</label>
+              <input type="checkbox" name="" id="">
+            </div>
+            <div>
+              <label for="">Qatar</label>
+              <input type="checkbox" name="" id="">
+            </div>
+            <div>
+              <label for="">Eithad</label>
+              <input type="checkbox" name="" id="">
+            </div>
+          </div>
+        </div>
+        <div class="filter__trips">
+          <div>
+            <h3>Trips</h3>
+            <div class="filter__imgContainer"></div>
+          </div>
+          <div>
+            <div>
+              <label for="">Round trip</label>
+              <input type="checkbox" name="" id="">
+            </div>
+            <div>
+              <label for="">One Way</label>
+              <input type="checkbox" name="" id="">
+            </div>
+            <div>
+              <label for="">Multi-City</label>
+              <input type="checkbox" name="" id="">
+            </div>
+            <div>
+              <label for="">My Dates Are Flexible</label>
+              <input type="checkbox" name="" id="">
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
     <div class="results">
       <div class="results__header"></div>
       <div class="results__content"></div>

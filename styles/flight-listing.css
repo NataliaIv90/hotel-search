@@ -19,3 +19,30 @@
   color: var(--dark-font-color-secondary);
   background-color: var(--light-bg-color);
 }
+
+.search {
+  transform: none;
+}
+
+.search__inpWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: var(--size-24rem) 0;
+  gap: 16rem;
+}
+
+.search__footerBtn {
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--brand-color-dark);
+  transition: all 0.2s;
+}
+
+.search__footerBtn:hover {
+  background-color: var(--light-bg-color);
+}
