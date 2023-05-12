@@ -97,19 +97,25 @@
   height: auto;
 }
 
+.hotTour__btnWrapper {
+  min-width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .hotTour__header {
   margin-bottom: 40rem;
 }
 
 .hotTour__cards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .hotTour__card {
-  width: 23%;
+  /* max-width: 24%; */
   height: 55vh;
   display: flex;
   justify-content: flex-end;
@@ -122,6 +128,12 @@
   border-radius: 12px;
   font-family: var(--main-font-semibold);
   font-size: 24rem;
+  transition: all 0.2s;
+}
+
+.hotTour__card:hover {
+  transform: scale(1.05);
+  border: 1px solid var(--border-color);
 }
 
 .hotTour__cardSubtitle {
@@ -149,6 +161,11 @@
   background-color: #8DD3BB;
   padding: 15rem 0;
   border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.hotTour__cardBtn:hover {
+  background-color: var(--light-bg-color);
 }
 
 .specialOffer {
@@ -174,6 +191,7 @@
   justify-content: space-between;
   flex-direction: column;
   padding: 5%;
+  transition: all 0.2s;
 }
 
 .specialOffer__card--5 {
@@ -196,6 +214,10 @@
 
 .specialOffer__card--4 {
   background-image: url("../img/flight-search/special-offer/special4.png");
+}
+
+.specialOffer__card:not(.specialOffer__card--5):hover {
+  transform: scale(1.05);
 }
 
 .specialOffer__cardTitleContainer {
@@ -231,4 +253,10 @@
   color: var(--dark-font-color-secondary);
   width: 100%;
   border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.specialOffer__cardBtn:hover {
+  background-color: var(--dark-font-color-secondary);
+  color: var(--light-font-color);
 }

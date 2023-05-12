@@ -1,0 +1,21 @@
+@import url("./normalize.css");
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./style.css");
+
+:root {
+  --light-font-color: #FFFFFF;
+  --light-bg-color: #FAFBFC;
+  --dark-font-color-main: #000000;
+  --dark-font-color-secondary: #112211;
+  --brand-color-dark-transp: rgba(141, 211, 187, 0.4);
+  --brand-color-dark: #8DD3BB;
+  --border-color: #1C1B1F;
+  --border-color-light: #D7E2EE;
+  --main-font-semibold: Montserrat600;
+  --main-font-medium: Montserrat500;
+  --main-font-regular: Montserrat400;
+  --brand-font-bold: Quicksand700;
+  color: var(--dark-font-color-secondary);
+  background-color: var(--light-bg-color);
+}

@@ -1,10 +1,27 @@
-function displayCards() {
+const displayHotTourBtn = document.querySelector(".hotTour__titleBtn");
+let loadedHotTourCards = false;
+
+displayHotTourBtn.addEventListener("click", () => {
+  document.querySelector(".hotTour__cards").innerHTML = "";
+  if (displayHotTourBtn.innerText === "See All") {
+    displayHotTourBtn.innerText = "Show Less";
+    displayCards(20);
+  } else if (displayHotTourBtn.innerText === "Show Less") {
+    displayHotTourBtn.innerText = "See All";
+    displayCards(4);
+  }
+  // displayHotTourBtn.classList.toggle("hotTour__titleShowLessBtn");
+  // }
+
+})
+
+function displayCards(total = 4) {
   const tours = [
     {
       "name": "Paris", "tour_name": "Romantic Parisian Getaway", "price": 900, "img": "Paris"
     },
     {
-      "name": "New York City", "tour_name": "Big Apple Adventure", "price": 1100, "img": "New-York-City"
+      "name": "Kyiv", "tour_name": "Discovering Kyiv's Rich History and Culture", "price": 700, "img": "Kyiv"
     },
     {
       "name": "Tokyo", "tour_name": "Exploring the Land of the Rising Sun", "price": 1000, "img": "Tokyo"
@@ -20,6 +37,8 @@ function displayCards() {
     },
     {
       "name": "Barcelona", "tour_name": "Gaudi and the Catalonian Culture", "price": 600, "img": "Barcelona"
+    }, {
+      "name": "New York City", "tour_name": "Big Apple Adventure", "price": 1100, "img": "New-York-City"
     },
     {
       "name": "Sydney", "tour_name": "Spectacular Sydney Harbour", "price": 900, "img": "Sydney"
@@ -48,9 +67,7 @@ function displayCards() {
     {
       "name": "Istanbul", "tour_name": "Crossroads of East and West", "price": 600, "img": "Istanbul"
     },
-    {
-      "name": "Kyiv", "tour_name": "Discovering Kyiv's Rich History and Culture", "price": 700, "img": "Kyiv"
-    },
+
     {
       "name": "Singapore", "tour_name": "Gardens by the Bay and City Sights", "price": 800, "img": "Singapore"
     },
@@ -63,7 +80,7 @@ function displayCards() {
   ],
     cardsDiv = document.querySelector(".hotTour__cards");
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < total; i++) {
     insertCard(i);
   }
 
@@ -83,5 +100,7 @@ function displayCards() {
     cardsDiv.insertAdjacentHTML("beforeend", card);
   }
 }
+
+
 
 displayCards();

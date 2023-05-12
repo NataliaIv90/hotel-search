@@ -276,20 +276,4 @@ function displayReviewCards() {
   });
 }
 
-/*
-<div class="rewiews__cards">
-  <div class="rewiews__card">
-    <div class="rewiews__cardTitle"></div>
-    <div class="rewiews__cardSubtitle">
-      <div class="rewiews__cardSubtitleText"></div>
-      <div class="rewiews__cardSubtitleBtn"></div>
-    </div>
-    <div class="rewiews__cardRate"></div>
-    <div class="rewiews__cardClientName"></div>
-    <div class="rewiews__cardDestination"></div>
-    <div class="rewiews__cardReviewSource"></div>
-    <div class="rewiews__cardImgContainer"></div>
-  </div>*/
-
-
 displayReviewCards();
