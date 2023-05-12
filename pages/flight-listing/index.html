@@ -15,7 +15,6 @@
     <div class="search">
       <div class="search__formWrapper">
         <form id="search__form" class="search__form">
-          <h2 class="search__formTitle">Where are you flying?</h2>
           <div class="search__inpWrapper">
             <fieldset class="search__fieldset">
               <legend> From - To </legend>
@@ -49,101 +48,163 @@
         </form>
       </div>
     </div>
-    <div class="filter">
-      <h2>Filters</h2>
-      <form>
-        <div class="filter__price">
-          <div>
+    <div class="contentContainer">
+      <div class="filter">
+        <h2>Filters</h2>
+        <form>
+          <div class="filter__price">
             <div>
-              <h3 class="filter__priceTitle">Price</h3>
+              <div>
+                <h3 class="filter__priceTitle">Price</h3>
+              </div>
+              <div class="filter__imgContainer"></div>
             </div>
-            <div class="filter__imgContainer"></div>
-          </div>
-          <div class="filter__priceInpContainer">
-            <input type="range" name="" id="" min="0" max="1200">
-          </div>
-        </div>
-        <div class="filter__departure">
-          <div>
-            <div>
-              <h3 class="filter__departureTitle">Departure Time</h3>
-            </div>
-            <div class="filter__imgContainer"></div>
-          </div>
-          <div class="filter__departureInpContainer">
-            <input type="range" name="" id="" min="00.00" max="23.59">
-          </div>
-        </div>
-        <div class="filter__rating">
-          <div>
-            <h3 class="filter__ratingTitle">Rating</h3>
-            <div class="filter__imgContainer"></div>
-          </div>
-
-          <div class="filter__ratingBtnsContainer">
-            <button type="button">0+</button>
-            <button type="button">1+</button>
-            <button type="button">2+</button>
-            <button type="button">3+</button>
-            <button type="button">4+</button>
-          </div>
-        </div>
-        <div class="filter__airlines">
-          <div>
-            <h3>Airlines</h3>
-            <div class="filter__imgContainer"></div>
-          </div>
-          <div>
-            <div>
-              <label for="">Emirates</label>
-              <input type="checkbox" name="" id="">
-            </div>
-            <div>
-              <label for="">Fly Dubai</label>
-              <input type="checkbox" name="" id="">
-            </div>
-            <div>
-              <label for="">Qatar</label>
-              <input type="checkbox" name="" id="">
-            </div>
-            <div>
-              <label for="">Eithad</label>
-              <input type="checkbox" name="" id="">
+            <div class="filter__priceInpContainer">
+              <input type="range" name="" id="" min="0" max="1200">
             </div>
           </div>
-        </div>
-        <div class="filter__trips">
-          <div>
-            <h3>Trips</h3>
-            <div class="filter__imgContainer"></div>
+          <div class="filter__departure">
+            <div>
+              <div>
+                <h3 class="filter__departureTitle">Departure Time</h3>
+              </div>
+              <div class="filter__imgContainer"></div>
+            </div>
+            <div class="filter__departureInpContainer">
+              <input type="range" name="" id="" min="00.00" max="23.59">
+            </div>
           </div>
-          <div>
+          <div class="filter__rating">
             <div>
-              <label for="">Round trip</label>
-              <input type="checkbox" name="" id="">
-            </div>
-            <div>
-              <label for="">One Way</label>
-              <input type="checkbox" name="" id="">
-            </div>
-            <div>
-              <label for="">Multi-City</label>
-              <input type="checkbox" name="" id="">
-            </div>
-            <div>
-              <label for="">My Dates Are Flexible</label>
-              <input type="checkbox" name="" id="">
+              <h3 class="filter__ratingTitle">Rating</h3>
+              <div class="filter__imgContainer"></div>
             </div>
 
+            <div class="filter__ratingBtnsContainer">
+              <button type="button">0+</button>
+              <button type="button">1+</button>
+              <button type="button">2+</button>
+              <button type="button">3+</button>
+              <button type="button">4+</button>
+            </div>
+          </div>
+          <div class="filter__airlines">
+            <div>
+              <h3>Airlines</h3>
+              <div class="filter__imgContainer"></div>
+            </div>
+            <div>
+              <div>
+                <label for="">Emirates</label>
+                <input type="checkbox" name="" id="">
+              </div>
+              <div>
+                <label for="">Fly Dubai</label>
+                <input type="checkbox" name="" id="">
+              </div>
+              <div>
+                <label for="">Qatar</label>
+                <input type="checkbox" name="" id="">
+              </div>
+              <div>
+                <label for="">Eithad</label>
+                <input type="checkbox" name="" id="">
+              </div>
+            </div>
+          </div>
+          <div class="filter__trips">
+            <div>
+              <h3>Trips</h3>
+              <div class="filter__imgContainer"></div>
+            </div>
+            <div>
+              <div>
+                <label for="">Round trip</label>
+                <input type="checkbox" name="" id="">
+              </div>
+              <div>
+                <label for="">One Way</label>
+                <input type="checkbox" name="" id="">
+              </div>
+              <div>
+                <label for="">Multi-City</label>
+                <input type="checkbox" name="" id="">
+              </div>
+              <div>
+                <label for="">My Dates Are Flexible</label>
+                <input type="checkbox" name="" id="">
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="results">
+        <div class="results__header">
+          <div class="results__headerCard">
+            <h3>Cheapest</h3>
+            <p>$<span>99</span>. <span>2</span>h <span>33</span>m</p>
+          </div>
+          <div class="results__headerCard">
+            <h3>Best</h3>
+            <p>$<span>99</span>. <span>2</span>h <span>33</span>m</p>
+          </div>
+          <div class="results__headerCard">
+            <h3>Quickest</h3>
+            <p>$<span>99</span>. <span>2</span>h <span>33</span>m</p>
+          </div>
+          <div class="results__headerCard">
+            <h3>Other sort</h3>
           </div>
         </div>
-      </form>
+        <div class="results__filterDetails">
+          <div> Showing 4 of
+            <span><span>257</span> places</span>
+          </div>
+          <div>Sort by <span>Recommended</span></div>
+        </div>
+        <div class="results__cards">
+          <div class="results__card">
+            <div class="results__cardImgContainer"></div>
+            <div class="results__cardContent">
+              <div class="results__cardTitleWrapper">
+                <div>
+                  <span class="results__cardReviewMark">4.2</span>
+                  <span class="results__cardReview">Very Good</span>
+                  <span><span class="results__cardRevievNum">54</span>reviews</span>
+                </div>
+                <div>
+                  <div>starting from</div>
+                  <div>$<span>104</span></div>
+                </div>
+              </div>
+              <div class="results__cardFlightOptions">
+                <input type="radio" name="" id="">
+                <div>
+                  <div>
+                    <div><span>12</span>:<span>00</span> <span>pm</span> - <span>12</span>:<span>00</span>
+                      <span>pm</span>
+                    </div>
+                    <div> Emirates</div>
+                  </div>
+                  <div>non stop </div>
+                  <div>
+                    <div><span>2</span>h <span>28</span>m</div>
+                    <div>EWR-BNA</div>
+                  </div>
+                </div>
+              </div>
+              <div class="results__cardBtnWrapper">
+                <button type="button">♥</button>
+                <button type="button">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results__footerBtnWrapper"><button type="button">Show more results</button></div>
+      </div>
     </div>
-    <div class="results">
-      <div class="results__header"></div>
-      <div class="results__content"></div>
-      <div class="results__footerBtnWrapper"></div>
-    </div>
+
   </main>
   <footer></footer>
   <script src="../../script/flight-listing.js"> </script>

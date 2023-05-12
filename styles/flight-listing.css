@@ -20,6 +20,14 @@
   background-color: var(--light-bg-color);
 }
 
+.search__formWrapper {
+  width: auto;
+}
+
+.search__fieldset {
+  width: auto;
+}
+
 .search {
   transform: none;
 }
@@ -45,4 +53,28 @@
 
 .search__footerBtn:hover {
   background-color: var(--light-bg-color);
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 24rem;
+}
+
+.results__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.results__headerCard {
+  padding: 17px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.results__filterDetails {
+  display: flex;
+  justify-content: space-between;
 }
