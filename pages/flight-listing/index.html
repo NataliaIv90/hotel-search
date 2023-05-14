@@ -48,14 +48,14 @@
         </form>
       </div>
     </div>
-    <div class="contentContainer">
+    <div class="contentContainer width-90">
       <div class="filter">
-        <h2>Filters</h2>
+        <h2 class="filter__title">Filters</h2>
         <form>
-          <div class="filter__price">
+          <div class="filter__item filter__price">
             <div>
               <div>
-                <h3 class="filter__priceTitle">Price</h3>
+                <h3 class="filter__subtitle filter__priceTitle">Price</h3>
               </div>
               <div class="filter__imgContainer"></div>
             </div>
@@ -63,10 +63,10 @@
               <input type="range" name="" id="" min="0" max="1200">
             </div>
           </div>
-          <div class="filter__departure">
+          <div class="filter__item filter__departure">
             <div>
               <div>
-                <h3 class="filter__departureTitle">Departure Time</h3>
+                <h3 class="filter__subtitle filter__departureTitle">Departure Time</h3>
               </div>
               <div class="filter__imgContainer"></div>
             </div>
@@ -74,65 +74,57 @@
               <input type="range" name="" id="" min="00.00" max="23.59">
             </div>
           </div>
-          <div class="filter__rating">
+          <div class="filter__item filter__rating">
             <div>
-              <h3 class="filter__ratingTitle">Rating</h3>
+              <h3 class="filter__subtitle filter__ratingTitle">Rating</h3>
               <div class="filter__imgContainer"></div>
             </div>
 
             <div class="filter__ratingBtnsContainer">
-              <button type="button">0+</button>
-              <button type="button">1+</button>
-              <button type="button">2+</button>
-              <button type="button">3+</button>
-              <button type="button">4+</button>
+              <a class="filter__ratingBtn" href="#">0+</a>
+              <a class="filter__ratingBtn" href="#">1+</a>
+              <a class="filter__ratingBtn" href="#">2+</a>
+              <a class="filter__ratingBtn" href="#">3+</a>
+              <a class="filter__ratingBtn" href="#">4+</a>
             </div>
           </div>
-          <div class="filter__airlines">
+          <div class="filter__item filter__airlines">
             <div>
-              <h3>Airlines</h3>
+              <h3 class="filter__subtitle">Airlines</h3>
               <div class="filter__imgContainer"></div>
             </div>
-            <div>
-              <div>
-                <label for="">Emirates</label>
-                <input type="checkbox" name="" id="">
+            <div class="filter__checkboxList">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">Emirates</label>
               </div>
-              <div>
-                <label for="">Fly Dubai</label>
-                <input type="checkbox" name="" id="">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">Fly Dubai</label>
               </div>
-              <div>
-                <label for="">Qatar</label>
-                <input type="checkbox" name="" id="">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">Qatar</label>
               </div>
-              <div>
-                <label for="">Eithad</label>
-                <input type="checkbox" name="" id="">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">Eithad</label>
               </div>
             </div>
           </div>
-          <div class="filter__trips">
+          <div class="filter__item filter__trips">
             <div>
-              <h3>Trips</h3>
+              <h3 class="filter__subtitle">Trips</h3>
               <div class="filter__imgContainer"></div>
             </div>
-            <div>
-              <div>
-                <label for="">Round trip</label>
-                <input type="checkbox" name="" id="">
+            <div class="filter__checkboxList">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">Round trip</label>
               </div>
-              <div>
-                <label for="">One Way</label>
-                <input type="checkbox" name="" id="">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">One Way</label>
               </div>
-              <div>
-                <label for="">Multi-City</label>
-                <input type="checkbox" name="" id="">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">Multi-City</label>
               </div>
-              <div>
-                <label for="">My Dates Are Flexible</label>
-                <input type="checkbox" name="" id="">
+              <div class="filter__checkboxContainer">
+                <input type="checkbox" name="" id=""><label for="">My Dates Are Flexible</label>
               </div>
 
             </div>
