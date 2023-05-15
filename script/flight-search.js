@@ -87,7 +87,7 @@ function displayCards(total = 4) {
 
   function insertCard(num) {
     let card = `
-   <div class="hotTour__card" style="background-image:url('../../img/flight-search/main/destinations/${tours[num].img}.jpg')">
+   <div class="hotTour__card" style="background-image:url('../../../img/flight-search/main/destinations/${tours[num].img}.jpg')">
     <div class="hotTour__cardContent">
       <div class="hotTour__cardTitleContainer">
         <h4 class="hotTour__cardTitle">${tours[num].name}</h4>

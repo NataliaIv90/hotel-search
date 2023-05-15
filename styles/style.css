@@ -14,6 +14,7 @@
   --main-font-semibold: Montserrat600;
   --main-font-medium: Montserrat500;
   --main-font-regular: Montserrat400;
+  --main-font-bold: Montserrat700;
   --brand-font-bold: Quicksand700;
   --size-32rem: 32rem;
   --size-64rem: 64rem;
@@ -23,8 +24,13 @@
 }
 
 @font-face {
+  font-family: Montserrat700;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
   font-family: Montserrat600;
-  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
@@ -254,6 +260,11 @@ body {
 .search__footerBtn {
   padding: var(--size-16rem) var(--size-8rem);
   border: none;
+}
+
+.search__telegaIcon {
+  width: 16rem;
+  height: auto;
 }
 
 .search__footerBtn--green {

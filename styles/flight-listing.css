@@ -10,19 +10,27 @@
   --dark-font-color-secondary: #112211;
   --brand-color-dark-transp: rgba(141, 211, 187, 0.4);
   --brand-color-dark: #8DD3BB;
+  --red-color: #FF8682;
   --border-color: #1C1B1F;
   --border-color-light: #D7E2EE;
   --main-font-semibold: Montserrat600;
   --main-font-medium: Montserrat500;
   --main-font-regular: Montserrat400;
   --brand-font-bold: Quicksand700;
+  --main-font-bold: Montserrat700;
+  --box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  --mint-color-border: 1px solid #8DD3BB;
   color: var(--dark-font-color-secondary);
   background-color: var(--light-bg-color);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .search__formWrapper {
   width: 90%;
-  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  box-shadow: var(--box-shadow);
 }
 
 .search__form {
@@ -37,7 +45,10 @@
 .search {
   transform: none;
   width: 100%;
+}
 
+.search__formIcon {
+  height: 14rem;
 }
 
 .search__inpWrapper {
@@ -98,7 +109,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background: #FFFFFF;
-  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  box-shadow: var(--box-shadow);
   border-radius: 12px;
   padding: 18rem;
   margin-bottom: 24rem;
@@ -115,6 +126,7 @@
 .results__filterDetails {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .filter__ratingBtnsContainer {
@@ -133,7 +145,7 @@
   gap: 4px;
   width: 40px;
   height: 32px;
-  border: 1px solid #8DD3BB;
+  border: var(--mint-color-border);
   border-radius: 4px;
 }
 
@@ -179,4 +191,202 @@
   font-family: var(--main-font-regular);
   font-size: 14rem;
   opacity: 0.4;
+}
+
+.results__sortByBtn {
+  font-family: var(--brand-font-bold);
+}
+
+.results__sortIcon {
+  height: 14rem;
+  width: auto;
+  /* background-color: red; */
+}
+
+.results__cards {
+  margin-top: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+
+}
+
+.results__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24rem;
+  background-color: var(--light-font-color);
+  border-radius: 12px;
+  width: 100%;
+  gap: 24rem 16rem;
+  box-shadow: var(--box-shadow);
+}
+
+.results__cardImgContainer {
+  width: 18%;
+  min-width: 160px;
+  height: 200px;
+  background-image: url("../img/airlines-logo/emirates.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.results__cardContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16rem;
+  margin-left: 16rem;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.results__cardTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12rem;
+  font-family: var(--main-font-medium);
+}
+
+.results__cardTitleStartingPrise {
+  font-family: var(--main-font-bold);
+  color: var(--red-color);
+  font-size: 24px;
+  text-align: right;
+}
+
+.results__cardReviewMark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  width: 40px;
+  height: 32px;
+  border: var(--mint-color-border);
+  border-radius: 4px;
+}
+
+.results__cardReview {
+  font-family: var(--brand-font-bold);
+}
+
+.results__cardTitleText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8rem;
+}
+
+.results__cardFlightDeatilsList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.results__cardFlightDeatilsListItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 12rem;
+  width: 85%;
+}
+
+
+.results__cardFlightDeatilsContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40rem;
+  margin-bottom: 2rem;
+  font-family: var(--main-font-semibold);
+  font-size: 16rem;
+}
+
+.results__cardListItemDiv {
+  white-space: nowrap;
+}
+
+.results__cardDivider {
+  height: 3px;
+  width: 100%;
+  border-top: 0.5px solid #11221140;
+}
+
+.results__cardBtnWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 16rem;
+  width: 100%;
+
+}
+
+.results__cardLikeBtn {
+  width: 48px;
+  height: 48px;
+  border: var(--mint-color-border);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.results__cardLikeBtn:hover {
+  background-color: var(--brand-color-dark);
+}
+
+.results__cardLikeBtnIcon {
+  width: 20rem;
+  height: auto;
+}
+
+.results__cardDetailsBtn {
+  width: 100%;
+  font-family: var(--main-font-semibold);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-color-dark);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.results__cardDetailsBtn:hover {
+  background-color: var(--light-font-color);
+  border: var(--mint-color-border);
+}
+
+.results__cardFlightDeatils--lightFont {
+  font-family: var(--main-font-regular);
+  font-size: 14rem;
+  opacity: 0.4;
+}
+
+.results__cardFlightMode {
+  font-size: 14rem;
+}
+
+.results__footerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  color: var(--light-font-color);
+  background: var(--dark-font-color-secondary);
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 24rem;
+  transition: all 0.2s;
+  border: 1px solid var(--dark-font-color-secondary);
+}
+
+.results__footerBtn:hover {
+  background-color: var(--light-font-color);
+  color: var(--dark-font-color-secondary);
 }

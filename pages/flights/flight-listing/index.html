@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../styles/flight-listing.css">
+  <link rel="stylesheet" href="../../../styles/flight-listing.css">
   <title>✈📃 Flight listing</title>
 </head>
 
@@ -22,7 +22,7 @@
                 <div>
                   <input class="search__inp" type="text" name="" id="" placeholder="Lahore - Karachi" disabled>
                 </div>
-                <div><img src="./img/main/swap.svg" alt=""></div>
+                <div><img class="search__formIcon" src="../../../img/icons/errow-full-swap.svg" alt=""></div>
               </div>
               <div class="hidden"></div>
 
@@ -31,7 +31,7 @@
               <legend> Trip </legend>
               <div class="search__fieldsetContent">
                 <div><input class="search__inp" type="text" name="" id="" placeholder="return" disabled></div>
-                <div><img src="./img/main/arrow-down.svg" alt=""></div>
+                <div><img class="search__formIcon" src="../../../img/icons/errow-short-down.svg" alt=""></div>
               </div>
             </fieldset>
             <fieldset class="search__fieldset">
@@ -42,8 +42,6 @@
               <legend> Passenger - Class </legend>
               <input class="search__inp" type="text" name="" id="" placeholder="1 Passenger, Economy" disabled>
             </fieldset>
-            <button class="search__footerBtn search__footerBtn--green">🔍
-            </button>
           </div>
         </form>
       </div>
@@ -153,53 +151,155 @@
           <div> Showing 4 of
             <span><span>257</span> places</span>
           </div>
-          <div>Sort by <span>Recommended</span></div>
+          <div>Sort by <span class="results__sortByBtn">Recommended <img class="results__sortIcon"
+                src="../../../img/icons/errow-short-down.svg" alt=""></span></div>
         </div>
         <div class="results__cards">
           <div class="results__card">
             <div class="results__cardImgContainer"></div>
-            <div class="results__cardContent">
+            <div class="results__cardContentContainer">
               <div class="results__cardTitleWrapper">
-                <div>
+                <div class="results__cardTitleText">
                   <span class="results__cardReviewMark">4.2</span>
                   <span class="results__cardReview">Very Good</span>
-                  <span><span class="results__cardRevievNum">54</span>reviews</span>
+                  <span><span class="results__cardRevievNum">54</span> reviews</span>
                 </div>
                 <div>
                   <div>starting from</div>
-                  <div>$<span>104</span></div>
+                  <div class="results__cardTitleStartingPrise">$<span>104</span></div>
                 </div>
               </div>
-              <div class="results__cardFlightOptions">
-                <input type="radio" name="" id="">
-                <div>
-                  <div>
-                    <div><span>12</span>:<span>00</span> <span>pm</span> - <span>12</span>:<span>00</span>
-                      <span>pm</span>
+              <ul class="results__cardFlightDeatilsList">
+                <li class="results__cardFlightDeatilsListItem ">
+                  <input type="radio" name="" id="">
+
+                  <div class="results__cardFlightDeatilsContent">
+
+                    <div class="results__cardListItemDiv">
+                      <div class="results__cardFlightTime"><span>12</span>:<span>00</span> <span>pm</span> -
+                        <span>12</span>:<span>00</span>
+                        <span>pm</span>
+                      </div>
+                      <div class="results__cardFlightDeatils--lightFont"> Emirates</div>
                     </div>
-                    <div> Emirates</div>
+
+                    <div class="results__cardListItemDiv results__cardFlightMode">non stop </div>
+                    <div class="results__cardListItemDiv">
+                      <div><span>2</span>h <span>28</span>m</div>
+                      <div class="results__cardFlightDeatils--lightFont">EWR-BNA</div>
+                    </div>
+
                   </div>
-                  <div>non stop </div>
-                  <div>
-                    <div><span>2</span>h <span>28</span>m</div>
-                    <div>EWR-BNA</div>
+                </li>
+                <li class="results__cardFlightDeatilsListItem ">
+                  <input type="radio" name="" id="">
+
+                  <div class="results__cardFlightDeatilsContent">
+
+                    <div class="results__cardListItemDiv">
+                      <div class="results__cardFlightTime"><span>12</span>:<span>00</span> <span>pm</span> -
+                        <span>12</span>:<span>00</span>
+                        <span>pm</span>
+                      </div>
+                      <div class="results__cardFlightDeatils--lightFont"> Emirates</div>
+                    </div>
+
+                    <div class="results__cardListItemDiv results__cardFlightMode">non stop </div>
+                    <div class="results__cardListItemDiv">
+                      <div><span>2</span>h <span>28</span>m</div>
+                      <div class="results__cardFlightDeatils--lightFont">EWR-BNA</div>
+                    </div>
+
                   </div>
+                </li>
+              </ul>
+              <div class="results__cardDivider"></div>
+              <div class="results__cardBtnWrapper">
+                <button class="results__cardLikeBtn" type="button"><img class="results__cardLikeBtnIcon"
+                    src="../../../img/icons/like-light.svg" alt="">
+                </button>
+                <button class="results__cardDetailsBtn" type="button">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="results__card">
+            <div class="results__cardImgContainer"></div>
+            <div class="results__cardContentContainer">
+              <div class="results__cardTitleWrapper">
+                <div class="results__cardTitleText">
+                  <span class="results__cardReviewMark">4.2</span>
+                  <span class="results__cardReview">Very Good</span>
+                  <span><span class="results__cardRevievNum">54</span> reviews</span>
+                </div>
+                <div>
+                  <div>starting from</div>
+                  <div class="results__cardTitleStartingPrise">$<span>104</span></div>
                 </div>
               </div>
+              <ul class="results__cardFlightDeatilsList">
+                <li class="results__cardFlightDeatilsListItem ">
+                  <input type="radio" name="" id="">
+
+                  <div class="results__cardFlightDeatilsContent">
+
+                    <div class="results__cardListItemDiv">
+                      <div class="results__cardFlightTime"><span>12</span>:<span>00</span> <span>pm</span> -
+                        <span>12</span>:<span>00</span>
+                        <span>pm</span>
+                      </div>
+                      <div class="results__cardFlightDeatils--lightFont"> Emirates</div>
+                    </div>
+
+                    <div class="results__cardListItemDiv results__cardFlightMode">non stop </div>
+                    <div class="results__cardListItemDiv">
+                      <div><span>2</span>h <span>28</span>m</div>
+                      <div class="results__cardFlightDeatils--lightFont">EWR-BNA</div>
+                    </div>
+
+                  </div>
+                </li>
+                <li class="results__cardFlightDeatilsListItem ">
+                  <input type="radio" name="" id="">
+
+                  <div class="results__cardFlightDeatilsContent">
+
+                    <div class="results__cardListItemDiv">
+                      <div class="results__cardFlightTime"><span>12</span>:<span>00</span> <span>pm</span> -
+                        <span>12</span>:<span>00</span>
+                        <span>pm</span>
+                      </div>
+                      <div class="results__cardFlightDeatils--lightFont"> Emirates</div>
+                    </div>
+
+                    <div class="results__cardListItemDiv results__cardFlightMode">non stop </div>
+                    <div class="results__cardListItemDiv">
+                      <div><span>2</span>h <span>28</span>m</div>
+                      <div class="results__cardFlightDeatils--lightFont">EWR-BNA</div>
+                    </div>
+
+                  </div>
+                </li>
+              </ul>
+              <div class="results__cardDivider"></div>
               <div class="results__cardBtnWrapper">
-                <button type="button">♥</button>
-                <button type="button">View Details</button>
+                <button class="results__cardLikeBtn" type="button"><img class="results__cardLikeBtnIcon"
+                    src="../../../img/icons/like-light.svg" alt="">
+                </button>
+                <button class="results__cardDetailsBtn" type="button">View Details</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="results__footerBtnWrapper"><button type="button">Show more results</button></div>
+
+        <div class="results__footerBtnWrapper"><button class="results__footerBtn" type="button">Show more
+            results</button></div>
       </div>
     </div>
 
+
   </main>
   <footer></footer>
-  <script src="../../script/flight-listing.js"> </script>
+  <script src="../../../script/flight-listing.js"> </script>
 </body>
 
 </html>
