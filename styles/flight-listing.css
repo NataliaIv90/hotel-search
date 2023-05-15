@@ -399,3 +399,7 @@
   background-color: var(--light-font-color);
   color: var(--dark-font-color-secondary);
 }
+
+.results--redText {
+  color: var(--red-color);
+}
