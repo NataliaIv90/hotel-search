@@ -177,8 +177,9 @@
   display: grid;
   grid-template-columns: 1.7fr 1fr 1fr;
   gap: 16rem;
-  height: 40vh;
+  height: 60vh;
   min-height: fit-content;
+
 
 }
 
@@ -198,6 +199,7 @@
   border: none;
   grid-row: 1/3;
   background-color: var(--brand-color-dark);
+
 }
 
 .specialOffer__card--1 {
@@ -259,4 +261,12 @@
 .specialOffer__cardBtn:hover {
   background-color: var(--dark-font-color-secondary);
   color: var(--light-font-color);
+}
+
+.specialOffer__cardBtnContainer {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

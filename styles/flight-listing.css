@@ -28,6 +28,14 @@
   box-sizing: border-box;
 }
 
+.header {
+  background-color: var(--light-font-color);
+  color: var(--dark-font-color-secondary);
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0px;
+}
+
 .search__formWrapper {
   width: 90%;
   box-shadow: var(--box-shadow);
@@ -43,6 +51,7 @@
 }
 
 .search {
+  margin-top: 150px;
   transform: none;
   width: 100%;
 }
