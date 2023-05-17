@@ -15,42 +15,54 @@
     <div class="main">
       <div class="path">
         <span class="path__countryName">Turkey</span>
-        <span><img class="path__icon" src="../../../img/icons/errow-short-right.svg" alt=""></span>
+        <span class="path__iconWrapper"><img class="path__icon" src="../../../img/icons/errow-short-right.svg"
+            alt=""></span>
         <span class="path__cityName">Istanbul</span>
-        <span><img class="path__icon" src="../../../img/icons/errow-short-right.svg" alt=""></span>
+        <span class="path__iconWrapper"><img class="path__icon" src="../../../img/icons/errow-short-right.svg"
+            alt=""></span>
         <span class="path__airportName">CVK Park Bosphorus Hotel Istanbul</span>
       </div>
       <div class="planeInfo">
         <div class="planeInfo__header">
-          <div>
-            <h1>Emirates A380 Airbus</h1>
-            <div><img class="planeInfo__geolocatonIcon" alt="" src="../../../img/icons/geolocation-dark.svg">
+          <div class="planeInfo__leftSection">
+            <h1 class="planeInfo__title">Emirates A380 Airbus</h1>
+            <div class="planeInfo__titleDetails"><img class="planeInfo__geolocatonIcon" alt=""
+                src="../../../img/icons/geolocation-dark.svg">
               <p>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
             </div>
-            <div><span class="planeInfo__reviewMark">4.2</span>
+            <div class="planeInfo__reviewWrapper"><span class="planeInfo__reviewMark">4.2</span>
               <span class="planeInfo__review">Very Good</span>
               <span><span class="planeInfo__revievNum">54</span> reviews</span>
             </div>
           </div>
-          <div>
+          <div class="planeInfo__rightSection">
             <div class="planeInfo__price">$<span>240</span></div>
-            <div>
-              <a href="#"><img src="../../../img/icons/like-light.svg" alt=""></a>
-              <a href="#"><img src="../../../img/icons/share-dark.svg" alt=""></a>
-              <a href="#">Book now</a>
+            <div class="planeInfo__btnContainer">
+              <a href="#" class="planeInfo__iconBtn"><img class="planeInfo__btnIcon"
+                  src="../../../img/icons/like-light.svg" alt=""></a>
+              <a href="#" class="planeInfo__iconBtn"><img class="planeInfo__btnIcon"
+                  src="../../../img/icons/share-dark.svg" alt=""></a>
+              <a href="#" class="planeInfo__bookBtn">Book now</a>
             </div>
           </div>
         </div>
         <div class="planeInfo__imgContainer"></div>
         <div class="planeInfo__gallery">
-          <div>
-            <h2 class="planeInfo__galleryHeader"></h2>
+          <div class="planeInfo__galleryHeaderWrapper">
+            <div>
+              <h2 class="planeInfo__galleryHeader">Basic Economy Features</h2>
+            </div>
+            <div class="planeInfo__checkboxesWrapper">
+              <div class="planeInfo__checkboxContainer"><input type="checkbox" name="" id=""><label
+                  for="">Economy</label></div>
+              <div class="planeInfo__checkboxContainer"><input type="checkbox" name="" id=""><label for="">First
+                  Class</label></div>
+              <div class="planeInfo__checkboxContainer"><input type="checkbox" name="" id=""><label for="">Business
+                  Class</label>
+              </div>
+            </div>
           </div>
-          <div>
-            <div><input type="checkbox" name="" id=""><label for="">Economy</label></div>
-            <div><input type="checkbox" name="" id=""><label for="">First Class</label></div>
-            <div><input type="checkbox" name="" id=""><label for="">Business Class</label></div>
-          </div>
+
           <div class="planeInfo__galleryCards">
             <!-- cards insert by js -->
           </div>
