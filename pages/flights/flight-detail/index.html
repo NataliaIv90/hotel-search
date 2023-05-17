@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../styles/detail.css">
+  <title>Flight detail page</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="main">
+      <div class="path">
+        <span class="path__countryName">Turkey</span>
+        <span><img class="path__icon" src="../../../img/icons/errow-short-right.svg" alt=""></span>
+        <span class="path__cityName">Istanbul</span>
+        <span><img class="path__icon" src="../../../img/icons/errow-short-right.svg" alt=""></span>
+        <span class="path__airportName">CVK Park Bosphorus Hotel Istanbul</span>
+      </div>
+      <div class="planeInfo">
+        <div class="planeInfo__header">
+          <div>
+            <h1>Emirates A380 Airbus</h1>
+            <div><img class="planeInfo__geolocatonIcon" alt="" src="../../../img/icons/geolocation-dark.svg">
+              <p>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+            </div>
+            <div><span class="planeInfo__reviewMark">4.2</span>
+              <span class="planeInfo__review">Very Good</span>
+              <span><span class="planeInfo__revievNum">54</span> reviews</span>
+            </div>
+          </div>
+          <div>
+            <div class="planeInfo__price">$<span>240</span></div>
+            <div>
+              <a href="#"><img src="../../../img/icons/like-light.svg" alt=""></a>
+              <a href="#"><img src="../../../img/icons/share-dark.svg" alt=""></a>
+              <a href="#">Book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="planeInfo__imgContainer"></div>
+        <div class="planeInfo__gallery">
+          <div>
+            <h2 class="planeInfo__galleryHeader"></h2>
+          </div>
+          <div>
+            <div><input type="checkbox" name="" id=""><label for="">Economy</label></div>
+            <div><input type="checkbox" name="" id=""><label for="">First Class</label></div>
+            <div><input type="checkbox" name="" id=""><label for="">Business Class</label></div>
+          </div>
+          <div class="planeInfo__galleryCards">
+            <!-- cards insert by js -->
+          </div>
+        </div>
+
+        <div class="flightInfo">
+          <div class="flightInfo__header">
+            <h2>Emirates Airlines Policies</h2>
+            <div>
+              <img class="flightInfo__icon" src="../../../img/icons/watch.svg" alt="">
+              <p>Pre-flight cleaning, installation of cabin HEPA filters.</p>
+            </div>
+            <div>
+              <img class="flightInfo__icon" src="flightInfo__icon" src="../../../img/icons/watch.svg" alt="">
+              <p>Pre-flight health screening questions.</p>
+            </div>
+          </div>
+          <div class="flightInfo__cards">
+            <div class="flightInfo__card">
+              <div class="flightInfo__cardHeader">
+                <div class="flightInfo__cardDateContainer">Return <span>Wed</span>, <span>Dec</span> <span>8</span>
+                </div>
+                <div class="flightInfo__cardFlightDurationContainer"><span>2</span>h <span>28</span>m</div>
+              </div>
+              <div class="flightInfo__cardPlaneInfo">
+                <div class="flightInfo__cardPlaneId">
+                  <div class="flightInfo__cardAirlinesLogoWrapper"></div>
+                  <div>
+                    <div class="flightInfo__cardAirlinesName">Emirates</div>
+                    <div class="flightInfo__cardAirplaneModel">Airbus A320</div>
+                  </div>
+                </div>
+                <div class="flightInfo__cardInfoIconsWrapper">
+                  <!-- icons input by js -->
+                </div>
+              </div>
+              <div class="flightInfo__cardFlightInfo">
+                <div>
+                  <span class="flightInfo__cardDepartureHours">12</span>:
+                  <span class="flightInfo__cardDepartureMinutes">00</span>
+                  <span class="flightInfo__cardDepartureTimeDetails">pm</span>
+                  <span class="flightInfo__cardDepartureCity">Newark</span>
+                  <span class="flightInfo__cardDepartureAirportAbbr">(EWR)</span>
+                </div>
+                <div>
+                  <img src="../../../img/flight-details/card-planeIcon.png" alt="">
+                </div>
+                <div>
+                  <span class="flightInfo__cardArrivalHours">12</span>:
+                  <span class="flightInfo__cardArrivalMinutes">00</span>
+                  <span class="flightInfo__cardArrivalTimeDetails">pm</span>
+                  <span class="flightInfo__cardArrivalCity">Newark</span>
+                  <span class="flightInfo__cardArrivalAirportAbbr">(EWR)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="../../../script/detail.js"></script>
+</body>
+
+</html>
