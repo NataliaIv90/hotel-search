@@ -2,3 +2,17 @@
 @import url("./reset.css");
 @import url("./typography.css");
 @import url("./style.css");
+
+.planeInfo__galleryCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.planeInfo__galleryCardsImgContainer {
+  width: 100px;
+  height: 100px;
+  /* background-image: url("../img/flight-details/plane-info/1.jpg"); */
+  background-position: cover;
+  background-repeat: no-repeat;
+}
