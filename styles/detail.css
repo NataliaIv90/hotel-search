@@ -19,6 +19,7 @@
   --main-font-bold: Montserrat700;
   --brand-font-bold: Quicksand700;
   --mint-color-border: 1px solid #8DD3BB;
+  --box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
   --size-32rem: 32rem;
   --size-64rem: 64rem;
   --size-8rem: 8rem;
@@ -50,6 +51,12 @@
 @font-face {
   font-family: Quicksand700;
   src: url("../fonts/Quicksand/Quicksand-Bold.ttf");
+}
+
+.main {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 .planeInfo__galleryCards {
@@ -246,4 +253,146 @@
 
 .planeInfo__galleryCardsImgContainer {
   border-radius: 12px;
+}
+
+.flightInfo__header {
+  width: 100%;
+  background-color: var(--brand-color-dark);
+  padding: 16rem;
+  margin: 40rem 0;
+  border-radius: 8px;
+}
+
+.flightInfo__headerTitle {
+  font-family: var(--brand-font-bold);
+  font-size: 24rem;
+  text-align: left;
+  margin-bottom: 16rem;
+}
+
+.flightInfo__headerContentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16rem;
+}
+
+.flightInfo__headerContent {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16rem;
+}
+
+.flightInfo__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40rem;
+}
+
+.flightInfo__card {
+  width: 100%;
+  padding: 32rem 24rem;
+  box-shadow: var(--box-shadow);
+}
+
+.flightInfo__cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24rem;
+}
+
+.flightInfo__cardDateContainer {
+  font-family: var(--brand-font-bold);
+  font-size: 20rem;
+}
+
+.flightInfo__cardFlightDurationContainer {
+  font-family: var(--main-font-medium);
+  font-size: 20rem;
+  opacity: 0.75;
+}
+
+.flightInfo__cardPlaneInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rem 32rem;
+  margin-bottom: 40rem;
+}
+
+.flightInfo__cardAirlinesLogoWrapper {
+  width: 64rem;
+  height: 64rem;
+  background-image: url("../img/airlines-logo/emirates.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.flightInfo__cardInfoIconsWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flightInfo__cardPlaneId {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24rem;
+}
+
+.flightInfo__cardAirlinesName {
+  font-family: var(--main-font-semibold);
+  font-size: 24rem;
+  margin-bottom: 8rem;
+}
+
+.flightInfo__cardAirplaneModel {
+  font-family: var(--main-font-medium);
+  font-size: 14rem;
+}
+
+.flightInfo__iconContainer {
+  height: 75rem;
+  width: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flightInfo__icon {
+  width: 22rem;
+  height: auto;
+}
+
+.flightInfo__iconContainer:not(:last-of-type) {
+  border-right: 1px solid #D7E2EE;
+}
+
+.flightInfo__cardFlightInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80rem;
+}
+
+.flightInfo__cardFlightDurationIcon {
+  height: 48rem;
+  width: auto;
+}
+
+.flightInfo__cardFlightDurationText {
+  font-family: var(--main-font-semibold);
+  font-size: 24rem;
+  margin: 10rem 0;
+}
+
+.flightInfo__cardDepartureTimeDetails,
+.flightInfo__cardArrivalTimeDetails {
+  margin-right: 8rem;
+}
+
+.flightInfo__cardAirportName--lightFont {
+  opacity: 0.6;
+  font-family: var(--main-font-medium);
+  font-size: 16rem;
 }

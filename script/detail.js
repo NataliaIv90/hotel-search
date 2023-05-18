@@ -16,7 +16,7 @@ function displayCardInfoIcons() {
 
   infoIconsArr.map(el => {
     infoIconsDiv.insertAdjacentHTML("beforeend", `
-    <div><img src="../../../img/icons/${el}.svg" alt=""></div>
+    <div class="flightInfo__iconContainer"><img class="flightInfo__icon" src="../../../img/icons/${el}.svg" alt=""></div>
     `)
   })
 }

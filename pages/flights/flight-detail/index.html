@@ -53,11 +53,13 @@
               <h2 class="planeInfo__galleryHeader">Basic Economy Features</h2>
             </div>
             <div class="planeInfo__checkboxesWrapper">
-              <div class="planeInfo__checkboxContainer"><input type="checkbox" name="" id=""><label
-                  for="">Economy</label></div>
-              <div class="planeInfo__checkboxContainer"><input type="checkbox" name="" id=""><label for="">First
+              <div class="planeInfo__checkboxContainer"><input class="planeInfo__inpCheckbox" type="checkbox" name=""
+                  id=""><label for="">Economy</label></div>
+              <div class="planeInfo__checkboxContainer"><input class="planeInfo__inpCheckbox" type="checkbox" name=""
+                  id=""><label for="">First
                   Class</label></div>
-              <div class="planeInfo__checkboxContainer"><input type="checkbox" name="" id=""><label for="">Business
+              <div class="planeInfo__checkboxContainer"><input class="planeInfo__inpCheckbox" type="checkbox" name=""
+                  id=""><label for="">Business
                   Class</label>
               </div>
             </div>
@@ -70,18 +72,21 @@
 
         <div class="flightInfo">
           <div class="flightInfo__header">
-            <h2>Emirates Airlines Policies</h2>
-            <div>
-              <img class="flightInfo__icon" src="../../../img/icons/watch.svg" alt="">
-              <p>Pre-flight cleaning, installation of cabin HEPA filters.</p>
+            <h2 class="flightInfo__headerTitle">Emirates Airlines Policies</h2>
+            <div class="flightInfo__headerContentWrapper">
+              <div class="flightInfo__headerContent">
+                <img class="flightInfo__icon" src="../../../img/icons/watch.svg" alt="">
+                <p>Pre-flight cleaning, installation of cabin HEPA filters.</p>
+              </div>
+              <div class="flightInfo__headerContent">
+                <img class="flightInfo__icon" src="../../../img/icons/watch.svg" alt="">
+                <p>Pre-flight health screening questions.</p>
+              </div>
             </div>
-            <div>
-              <img class="flightInfo__icon" src="../../../img/icons/watch.svg" alt="">
-              <p>Pre-flight health screening questions.</p>
-            </div>
+
           </div>
-          <div class="flightInfo__cards">
-            <div class="flightInfo__card">
+          <ul class="flightInfo__cards">
+            <li class="flightInfo__card">
               <div class="flightInfo__cardHeader">
                 <div class="flightInfo__cardDateContainer">Return <span>Wed</span>, <span>Dec</span> <span>8</span>
                 </div>
@@ -100,26 +105,66 @@
                 </div>
               </div>
               <div class="flightInfo__cardFlightInfo">
-                <div>
-                  <span class="flightInfo__cardDepartureHours">12</span>:
-                  <span class="flightInfo__cardDepartureMinutes">00</span>
+                <div class="flightInfo__cardFlightDurationText">
+                  <span class="flightInfo__cardDepartureHours">12</span>:<span
+                    class="flightInfo__cardDepartureMinutes">00</span>
                   <span class="flightInfo__cardDepartureTimeDetails">pm</span>
-                  <span class="flightInfo__cardDepartureCity">Newark</span>
-                  <span class="flightInfo__cardDepartureAirportAbbr">(EWR)</span>
+                  <span class="flightInfo__cardDepartureCity flightInfo__cardAirportName--lightFont">Newark</span><span
+                    class="flightInfo__cardDepartureAirportAbbr flightInfo__cardAirportName--lightFont">(EWR)</span>
                 </div>
                 <div>
-                  <img src="../../../img/flight-details/card-planeIcon.png" alt="">
+                  <img class="flightInfo__cardFlightDurationIcon" src="../../../img/flight-details/card-planeIcon.png"
+                    alt="">
                 </div>
-                <div>
-                  <span class="flightInfo__cardArrivalHours">12</span>:
-                  <span class="flightInfo__cardArrivalMinutes">00</span>
+                <div class="flightInfo__cardFlightDurationText">
+                  <span class="flightInfo__cardArrivalHours">12</span>:<span
+                    class="flightInfo__cardArrivalMinutes">00</span>
                   <span class="flightInfo__cardArrivalTimeDetails">pm</span>
-                  <span class="flightInfo__cardArrivalCity">Newark</span>
-                  <span class="flightInfo__cardArrivalAirportAbbr">(EWR)</span>
+                  <span class="flightInfo__cardArrivalCity flightInfo__cardAirportName--lightFont">Newark</span><span
+                    class="flightInfo__cardArrivalAirportAbbr flightInfo__cardAirportName--lightFont">(EWR)</span>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="flightInfo__card">
+              <div class="flightInfo__cardHeader">
+                <div class="flightInfo__cardDateContainer">Return <span>Wed</span>, <span>Dec</span> <span>8</span>
+                </div>
+                <div class="flightInfo__cardFlightDurationContainer"><span>2</span>h <span>28</span>m</div>
+              </div>
+              <div class="flightInfo__cardPlaneInfo">
+                <div class="flightInfo__cardPlaneId">
+                  <div class="flightInfo__cardAirlinesLogoWrapper"></div>
+                  <div>
+                    <div class="flightInfo__cardAirlinesName">Emirates</div>
+                    <div class="flightInfo__cardAirplaneModel">Airbus A320</div>
+                  </div>
+                </div>
+                <div class="flightInfo__cardInfoIconsWrapper">
+                  <!-- icons input by js -->
+                </div>
+              </div>
+              <div class="flightInfo__cardFlightInfo">
+                <div class="flightInfo__cardFlightDurationText">
+                  <span class="flightInfo__cardDepartureHours">12</span>:<span
+                    class="flightInfo__cardDepartureMinutes">00</span>
+                  <span class="flightInfo__cardDepartureTimeDetails">pm</span>
+                  <span class="flightInfo__cardDepartureCity flightInfo__cardAirportName--lightFont">Newark</span><span
+                    class="flightInfo__cardDepartureAirportAbbr flightInfo__cardAirportName--lightFont">(EWR)</span>
+                </div>
+                <div>
+                  <img class="flightInfo__cardFlightDurationIcon" src="../../../img/flight-details/card-planeIcon.png"
+                    alt="">
+                </div>
+                <div class="flightInfo__cardFlightDurationText">
+                  <span class="flightInfo__cardArrivalHours">12</span>:<span
+                    class="flightInfo__cardArrivalMinutes">00</span>
+                  <span class="flightInfo__cardArrivalTimeDetails">pm</span>
+                  <span class="flightInfo__cardArrivalCity flightInfo__cardAirportName--lightFont">Newark</span><span
+                    class="flightInfo__cardArrivalAirportAbbr flightInfo__cardAirportName--lightFont">(EWR)</span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
